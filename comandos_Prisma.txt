@@ -1,0 +1,15 @@
+npm init -y
+
+npm i prisma -D // D --> Desarrollo
+
+npx prisma init // crear carpeta prisma por defecto postgresql, se puede cambiar datasource-provider
+
+npx prisma migrate dev // correr la migracion
+
+npx prisma migrate dev --name post-user-relation // relacionar mas tablas y agregar un nombre a la migracion
+
+
+npx prisma studio //levantar una aplicacion en el puerto 5555
+
+
+npx prisma migrate deploy //subir los datos a la base de datos

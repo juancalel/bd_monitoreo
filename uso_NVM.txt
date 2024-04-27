@@ -1,0 +1,21 @@
+INSTALAR Nodejs
+
+1. Instala NVM:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+
+2. Cierra y vuelve a abrir tu terminal o ejecuta el siguiente comando para usar NVM en la misma sesión:
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+3. Instala la version deseada de Nodejs
+nvm install 16
+nvm use 16
+nvm alias default 16
+
+
+4. Comando para ver versiones LTS disponibles y estado actual
+nvm list-remote --lts
+
+
